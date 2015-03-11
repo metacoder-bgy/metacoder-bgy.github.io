@@ -122,7 +122,7 @@
         </span>
         <h3 class="member-name"><%= member.name %></a></h3>
         <div class="body">
-          <p class="description"><%= member.fullname ? 'Fullname: ' + member.fullname : '' %></p>
+          <p class="description"><%= member.fullname || '' %></p>
         </div>
       </li>
       <% }); %>
